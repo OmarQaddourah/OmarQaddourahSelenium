@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Selenium Automation">
     <listeners>
-        <listener class-name="core.features.LoggingListener" />
-        <listener class-name="core.features.ReportListener" />
-        <listener class-name="core.features.RetryListener" />
+        <listener class-name="core.features.ListenerClass" />
     </listeners>
 
     <test name="Google Tests" preserve-order="true">

@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-import static core.base.BaseClass.webDriver;
+import static core.base.BaseTestClass.webDriver;
 
 public class ElementsHelper {
 
