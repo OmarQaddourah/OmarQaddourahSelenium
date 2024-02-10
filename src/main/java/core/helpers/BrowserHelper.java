@@ -4,7 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 import java.util.ArrayList;
 
-import static core.base.BaseClass.webDriver;
+import static core.base.BaseTestClass.webDriver;
 
 public class BrowserHelper {
 

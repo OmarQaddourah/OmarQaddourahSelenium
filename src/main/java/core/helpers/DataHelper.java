@@ -2,7 +2,7 @@ package core.helpers;
 
 import java.util.Random;
 
-import static core.base.BaseClass.globalVariable;
+import static core.base.BaseTestClass.globalObject;
 
 public class DataHelper {
 
@@ -36,10 +36,10 @@ public class DataHelper {
     }
 
     public static void setGlobalVariable(String key, String value) {
-        globalVariable.put(key, value);
+        globalObject.put(key, value);
     }
 
     public static Object getGlobalVariable(String key) {
-        return globalVariable.get(key);
+        return globalObject.get(key);
     }
 }

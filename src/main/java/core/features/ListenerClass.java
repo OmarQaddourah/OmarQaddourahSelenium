@@ -5,23 +5,30 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.testng.IAnnotationTransformer;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import org.testng.annotations.ITestAnnotation;
 
 import java.io.File;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-import static core.base.BaseClass.webDriver;
+import static core.base.BaseTestClass.webDriver;
 
-public class ReportListener implements ITestListener {
+public class ListenerClass implements ITestListener, IAnnotationTransformer {
 
+    private final Logger LOGGER = LogManager.getLogger(ListenerClass.class);
     private ExtentReports extentReports;
     private ExtentTest extentTest;
     LocalDateTime now = LocalDateTime.now();
@@ -51,12 +58,17 @@ public class ReportListener implements ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
+        System.out.println("Test Started: " + result.getName());
+        LOGGER.info("Test method '" + result.getName() + "' started.");
+
         extentTest = extentReports.createTest(result.getMethod().getMethodName());
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
         extentTest.log(Status.PASS, "Test Passed");
+        LOGGER.info("Test method '" + result.getName() + "' passed.");
+        System.out.println("Test Passed: " + result.getName());
     }
 
     @Override
@@ -68,6 +80,10 @@ public class ReportListener implements ITestListener {
             String screenshotPath = captureScreenshot();
             extentTest.fail("Screenshot", MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
         }
+
+        LOGGER.error("Test method '" + result.getName() + "' failed.");
+        System.out.println("Test Failed: " + result.getName());
+        System.out.println("Exception: " + result.getThrowable());
     }
 
     @Override
@@ -78,5 +94,10 @@ public class ReportListener implements ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         extentReports.flush();
+    }
+
+    @Override
+    public void transform(final ITestAnnotation annotation, final Class testClass, final Constructor testConstructor, final Method testMethod) {
+        annotation.setRetryAnalyzer(RetryAnalyzer.class);
     }
 }

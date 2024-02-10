@@ -3,7 +3,5 @@
 /screenshots
 /test-reports
 /logs
-# System file that macOS creates to store custom attributes of a folder.
-.DS_Store
 # IntelliJ IDEA Module files used to store information of project's modulea, dependencies, and configurations.
 *.iml
