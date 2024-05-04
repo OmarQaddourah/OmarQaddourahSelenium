@@ -1,0 +1,42 @@
+12:51:48.080 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+12:51:53.477 [main] ERROR core.features.ListenerClass - Test method 'verifyHomeLogo' failed.
+12:57:04.445 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+12:57:09.895 [main] ERROR core.features.ListenerClass - Test method 'verifyHomeLogo' failed.
+13:03:06.091 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+13:03:11.523 [main] ERROR core.features.ListenerClass - Test method 'verifyHomeLogo' failed.
+13:22:29.904 [TestNG-test=Google Tests-1] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+13:22:35.362 [TestNG-test=Google Tests-1] ERROR core.features.ListenerClass - Test method 'verifyHomeLogo' failed.
+10:15:39.034 [main] INFO  core.features.ListenerClass - Test method 'sss' started.
+10:15:39.050 [main] INFO  core.features.ListenerClass - Test method 'sss' passed.
+10:15:39.052 [main] INFO  core.features.ListenerClass - Test method 'sss' started.
+10:15:39.053 [main] INFO  core.features.ListenerClass - Test method 'sss' passed.
+10:15:39.053 [main] INFO  core.features.ListenerClass - Test method 'sss' started.
+10:15:39.054 [main] INFO  core.features.ListenerClass - Test method 'sss' passed.
+10:15:53.742 [main] INFO  core.features.ListenerClass - Test method 'sss' started.
+10:15:53.753 [main] INFO  core.features.ListenerClass - Test method 'sss' passed.
+10:15:53.755 [main] INFO  core.features.ListenerClass - Test method 'sss' started.
+10:15:53.756 [main] INFO  core.features.ListenerClass - Test method 'sss' passed.
+10:15:53.756 [main] INFO  core.features.ListenerClass - Test method 'sss' started.
+10:15:53.757 [main] INFO  core.features.ListenerClass - Test method 'sss' passed.
+15:10:12.228 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+15:12:16.417 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+15:12:16.516 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' passed.
+15:26:29.463 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+15:26:29.556 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' passed.
+12:36:52.163 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+12:36:52.245 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' passed.
+18:45:59.617 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+18:45:59.792 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' passed.
+18:46:34.698 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+18:47:35.107 [main] INFO  Retry.class - Retrying test verifyHomeLogo with status FAILURE for the 2 time(s).
+18:47:35.115 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+18:49:06.373 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+18:49:11.822 [main] INFO  Retry.class - Retrying test verifyHomeLogo with status FAILURE for the 2 time(s).
+18:49:11.828 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+18:49:17.141 [main] INFO  Retry.class - Retrying test verifyHomeLogo with status FAILURE for the 3 time(s).
+18:49:17.142 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+18:49:22.681 [main] ERROR core.features.ListenerClass - Test method 'verifyHomeLogo' failed.
+19:52:20.624 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+19:52:55.311 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+19:53:33.884 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' started.
+19:53:33.992 [main] INFO  core.features.ListenerClass - Test method 'verifyHomeLogo' passed.

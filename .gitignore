@@ -1,7 +1,7 @@
 /.idea
 /target
-/screenshots
-/test-reports
-/logs
+#/screenshots
+#/test-reports
+#/logs
 # IntelliJ IDEA Module files used to store information of project's modulea, dependencies, and configurations.
 *.iml
